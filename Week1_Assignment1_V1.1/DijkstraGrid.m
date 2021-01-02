@@ -100,10 +100,10 @@ while true
     numExpanded = numExpanded + 1;
     
     current_node = [i,j];
-    north_node = [i, j+1];
-    south_node = [i, j-1];
-    west_node = [i-1, j];
-    east_node = [i+1, j];
+    north_node = [i-1, j];
+    south_node = [i+1, j];
+    west_node = [i, j-1];
+    east_node = [i, j+1];
     neighbor_nodes = [north_node; south_node; west_node; east_node];
     for k = 1:4
         if (   (neighbor_nodes(k,1) > 0 && neighbor_nodes(k,2) > 0 && neighbor_nodes(k,1) <= nrows && neighbor_nodes(k,2) <= ncols) ... //不超过map界限

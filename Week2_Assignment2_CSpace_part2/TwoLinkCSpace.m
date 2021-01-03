@@ -81,7 +81,7 @@ figure(2);
 
 % You should experiment by changing these coordinates
 start_coords = [1, 1]*5;
-end_coords = [30, 20]*5;
+end_coords = [50, 80];
 
 % Find a route between the start and end nodes
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

@@ -62,7 +62,10 @@ yd = dest_coords(2);
 
 % Evaluate Heuristic function, H, for each grid cell
 % Manhattan distance
-H = abs(X - xd) + abs(Y - yd);
+
+% H = abs(X - xd) + abs(Y - yd);
+%为了使可以连续，需要修改：
+H = min(abs(X - xd), ncols - abs(X - xd)) + min(abs(Y - yd), nrows - abs(Y - yd));
 H = H';
 % Initialize cost arrays
 f = Inf(nrows,ncols);
